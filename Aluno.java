@@ -1,67 +1,67 @@
 public class Aluno{
     private String nome;
-    private String matricula;
+    private int matricula;
     private String curso;
-    private String materia1;
-    private String materia2;
-    private String materia3;
-    private double notaMateria1;
-    private double notaMateria2;
-    private double notaMateria3;
+    private String disciplina;
+    private float nota1;
+    private float nota2;
+    private float nota3;
 
-    public double getNotaMateria1() {
-        return notaMateria1;
-    }
-    public void setNotaMateria1(double notaMateria1) {
-        this.notaMateria1 = notaMateria1;
-    }
-    public double getNotaMateria2() {
-        return notaMateria2;
-    }
-    public void setNotaMateria2(double notaMateria2) {
-        this.notaMateria2 = notaMateria2;
-    }
-    public double getNotaMateria3() {
-        return notaMateria3;
-    }
-    public void setNotaMateria3(double notaMateria3) {
-        this.notaMateria3 = notaMateria3;
-    }
-    public String getMateria1() {
-        return materia1;
-    }
-    public void setMateria1(String materia1) {
-        this.materia1 = materia1;
-    }
-    public String getMateria2() {
-        return materia2;
-    }
-    public void setMateria2(String materia2) {
-        this.materia2 = materia2;
-    }
-    public String getMateria3() {
-        return materia3;
-    }
-    public void setMateria3(String materia3) {
-        this.materia3 = materia3;
-    }
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
+    public void setNome(String nome){
         this.nome = nome;
     }
-    public String getMatricula() {
-        return matricula;
+    public String getNome(){
+        return this.nome;
     }
-    public void setMatricula(String matricula) {
+
+    public void setMatricula(int matricula){
         this.matricula = matricula;
     }
-    public String getCurso() {
-        return curso;
+    public int getMatricula(){
+        return this.matricula;
     }
-    public void setCurso(String curso) {
+
+    public void setCurso(String curso){
         this.curso = curso;
-    } 
-    
+    }
+    public String getCurso(){
+        return this.curso;
+    }
+
+    public void setDisciplina(String disciplina){
+        this.disciplina = disciplina;
+    }
+    public String getDisciplina(){
+        return this.disciplina;
+    }
+
+    public void setNota1(float nota1){
+        this.nota1 = nota1;
+    }
+    public float getNota1(){
+        return this.nota1;
+    }
+
+    public void setNota2(float nota2){
+        this.nota2 = nota2;
+    }
+    public float getNota2(){
+        return this.nota2;
+    }
+
+    public void setNota3(float nota3){
+        this.nota3 = nota3;
+    }
+    public float getNota3(){
+        return this.nota3;
+    }
+
+    public void verificarNotas(){
+        if (nota1 >= 7 && nota2 >= 7 && nota3 >= 7){
+            System.out.println("Aluno(a) Aprovado(a)!!");
+        }else{
+            System.out.println("Aluno(a) Reprovado(a)!!");
+        }
+    }
+
 }
